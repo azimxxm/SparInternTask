@@ -26,6 +26,7 @@
 		CA8594712C67EFF00019F672 /* PriceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8594702C67EFF00019F672 /* PriceCardView.swift */; };
 		CA8594732C67F0B80019F672 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8594722C67F0B80019F672 /* ProductListView.swift */; };
 		CA8594752C67F1260019F672 /* StateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8594742C67F1260019F672 /* StateEnum.swift */; };
+		CA8594772C67F2900019F672 /* MainScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8594762C67F2900019F672 /* MainScreenVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		CA8594702C67EFF00019F672 /* PriceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCardView.swift; sourceTree = "<group>"; };
 		CA8594722C67F0B80019F672 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		CA8594742C67F1260019F672 /* StateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateEnum.swift; sourceTree = "<group>"; };
+		CA8594762C67F2900019F672 /* MainScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		CA75C0B52C67D38600F804F4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CA8594762C67F2900019F672 /* MainScreenVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				CA8594732C67F0B80019F672 /* ProductListView.swift in Sources */,
 				CA85946D2C67EE9A0019F672 /* ProductListCardCell.swift in Sources */,
 				CA85946B2C67EA4F0019F672 /* CounterView.swift in Sources */,
+				CA8594772C67F2900019F672 /* MainScreenVM.swift in Sources */,
 				CA8594672C67E3BB0019F672 /* ProductGridView.swift in Sources */,
 				CA8594752C67F1260019F672 /* StateEnum.swift in Sources */,
 				CA85945F2C67DC400019F672 /* FavoritesButton.swift in Sources */,

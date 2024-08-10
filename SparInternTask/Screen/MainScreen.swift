@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainScreen: View {
-    @State private var viewState: StateEnum = .grid
+    @StateObject private var viewModel = MainScreenVM()
     var body: some View {
         NavigationView(content: {
             VStack {
@@ -19,13 +19,7 @@ struct MainScreen: View {
                         .frame(width: 48, height: 48)
                         .clipped()
                         .padding(.leading)
-                        .asButton(.press, action: {
-                            if viewState == .grid {
-                                viewState = .list
-                            } else {
-                                viewState = .grid
-                            }
-                        })
+                        .asButton(.press, action: { viewModel.toggleViewState() })
                     CustomDivider(height: 2)
                 }
                 someView
@@ -33,10 +27,10 @@ struct MainScreen: View {
         })
         .navigationBarBackButtonHidden()
     }
-    
+
     @ViewBuilder
     private var someView: some View {
-        switch viewState {
+        switch viewModel.viewState {
         case .grid:
             ProductGridView()
         case .list:
