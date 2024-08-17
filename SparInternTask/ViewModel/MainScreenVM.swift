@@ -9,7 +9,7 @@ import SwiftUI
 
 class MainScreenVM: ObservableObject {
     @Published var data: [ProductDM] = MocData()
-    @State var viewState: StateEnum = .grid
+    @Published var viewState: StateEnum = .grid
 
     func toggleViewState() {
         if viewState == .grid {
